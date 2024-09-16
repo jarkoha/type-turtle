@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import MyForm from './components/LoginForm';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,15 +13,15 @@ const router = createBrowserRouter(
       element={<App />}
     >
       <Route
-        path="extra"
+        path="/extra"
         element={<h1>Extra</h1>}
       />
       <Route
-        path="loginform"
-        element={<h1>MyForm</h1>} //vaata üle, mis siia läheb
+        path="/form"
+        element={<MyForm />}
       />
       <Route
-        path="contact"
+        path="/contact"
         element={<h1>Contact</h1>}
       />
     </Route>
