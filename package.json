@@ -1,7 +1,7 @@
 {
   "name": "type-turtle",
   "version": "0.1.0",
-  "homepage": "https://jarkoha.github.io/react-gh-pages",
+  "homepage": "https://jarkoha.github.io/type-turtle",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.3",
