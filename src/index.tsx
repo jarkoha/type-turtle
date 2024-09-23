@@ -26,7 +26,10 @@ const router = createBrowserRouter(
         element={<About />}
       />
     </Route>
-  )
+  ),
+  {
+    basename: "/type-turtle"
+  }
 )
 
 const root = ReactDOM.createRoot(
