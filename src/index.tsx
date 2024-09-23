@@ -5,6 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import MyForm from './components/LoginForm';
+import About from './components/About';
+import Home from './components/Home';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -12,17 +14,16 @@ const router = createBrowserRouter(
       path="/"
       element={<App />}
     >
+      <Route 
+        index 
+        element={<Home />} />
       <Route
-        path="/extra"
-        element={<h1>Extra</h1>}
-      />
-      <Route
-        path="/form"
+        path="login"
         element={<MyForm />}
       />
       <Route
-        path="/contact"
-        element={<h1>Contact</h1>}
+        path="about"
+        element={<About />}
       />
     </Route>
   )

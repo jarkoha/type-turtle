@@ -9,6 +9,8 @@ export default function MyForm() {
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        console.log("Username:", form.username);
+        console.log("Password:", form.password);
     };
 
     //useEffect(() => {
